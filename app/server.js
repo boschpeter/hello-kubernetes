@@ -10,8 +10,8 @@ app.use(express.static('static'));
 app.use(morgan('combined'));
 
 // Configuration
-var port = process.env.PORT || 8080;
-var message = process.env.MESSAGE || "Hello world!";
+var port = process.env.PORT || 80;
+var message = process.env.MESSAGE || "Hello world!, nice to see you again ";
 
 app.get('/', function (req, res) {
     res.render('home', {

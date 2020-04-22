@@ -2,7 +2,7 @@
 # Hello Kubernetes!
 
 
-## docker build --no-cache --build-arg IMAGE_VERSION="k8s" --build-arg IMAGE_CREATE_DATE="`date -u +"%Y-%m-%dT%H:%M:%SZ"`" --build-arg IMAGE_SOURCE_REVISION="`git rev-parse HEAD`" -f Dockerfile -t "boscp08/hello-kubernetes:k8s" app --build-arg MESSAGE="hola"
+## docker build --no-cache --build-arg IMAGE_VERSION="k8s" --build-arg IMAGE_CREATE_DATE="`date -u +"%Y-%m-%dT%H:%M:%SZ"`" --build-arg IMAGE_SOURCE_REVISION="`git rev-parse HEAD`" -f Dockerfile -t "boscp08/hello-kubernetes:k8s" app 
 
 
 ## docker run -p:80:8080 boscp08/hello-kubernetes:k8s 
@@ -54,7 +54,7 @@ boscp08@boscp08-dingo:~$ curl http://localhost:8080
 ## docker push boscp08/hello-kubernetes:k8s 
 
 
-
+## kubectl exec -it hello-kubernetes-8d48cd7f5-fplv8 sh
 
 
 
