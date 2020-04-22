@@ -1,7 +1,7 @@
 
 # Hello Kubernetes!
 
-[hello-world](https://github.com/boschpeter/hello-kubernetes/blob/master/pictures/accict.jpeg)
+![hello-world](https://github.com/boschpeter/hello-kubernetes/blob/master/pictures/accict.jpeg)
 
 
 ## docker build --no-cache --build-arg IMAGE_VERSION="k8s" --build-arg IMAGE_CREATE_DATE="`date -u +"%Y-%m-%dT%H:%M:%SZ"`" --build-arg IMAGE_SOURCE_REVISION="`git rev-parse HEAD`" -f Dockerfile -t "boscp08/hello-kubernetes:k8s" app 
@@ -51,7 +51,7 @@ boscp08@boscp08-dingo:~$ curl http://localhost:8080
 
 
 ````
-[nice](https://github.com/boschpeter/hello-kubernetes/blob/master/pictures/Screenshot%20from%202020-04-22%2015-38-29.png)
+![nice](https://github.com/boschpeter/hello-kubernetes/blob/master/pictures/Screenshot%20from%202020-04-22%2015-38-29.png)
 
 ## docker push boscp08/hello-kubernetes:k8s 
 
