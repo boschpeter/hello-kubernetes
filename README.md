@@ -8,7 +8,52 @@
 ## docker run -p:80:8080 boscp08/hello-kubernetes:k8s 
 
 
+## curl http://localhost:8080
+
+````
+boscp08@boscp08-dingo:~$ curl http://localhost:8080
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello Kubernetes!</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300" >
+</head>
+<body>
+
+  <div class="main">
+    <img src="/images/kubernetes.png"/>
+    <div class="content">
+      <div id="message">
+  Hello world!
+</div>
+<div id="info">
+  <table>
+    <tr>
+      <th>pod:</th>
+      <td>7b08505a4a35</td>
+    </tr>
+    <tr>
+      <th>node:</th>
+      <td>Linux (5.3.0-46-generic)</td>
+    </tr>
+  </table>
+
+</div>
+    </div>
+  </div>
+
+</body>
+</html>boscp08@boscp08-dingo:~$ 
+
+
+
+````
+
+
 ## docker push boscp08/hello-kubernetes:k8s 
+
+
 
 
 

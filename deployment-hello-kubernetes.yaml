@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-kubernetes
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-kubernetes-app
+  template:
+    metadata:
+      labels:
+        app: hello-kubernetes-app
+    spec:
+      containers:
+      - name: hello-kubernetes
+        image: boscp08/hello-kubernetes:k8s
+        imagePullPolicy: IfNotPresent
+      nodeSelector:
+        processortype: amd     
+#      env:
+#      - name: MESSAGE
+#          value: Hello nice to see you again , from the hello-kubernetes-container
